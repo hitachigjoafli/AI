@@ -1,5 +1,5 @@
 # N-Queens problem
-![Nqueens](https://github.com/abbjoafli/AI/blob/master/img/nQueens.png)
+![Nqueens](https://github.com/abbjoafli/AI/blob/master/img/nQueens.PNG?raw=true)
 ##Intro 
 I denna uppgift kommer vi titta bitvis på [denna video](https://www.youtube.com/watch?v=JxYhc0QMVVY). Vi kommer varva varje segment med en uppgift så när du tittat på en del, gå då vidare till nästa kapitel.
 De segment du ska kolla är följande:

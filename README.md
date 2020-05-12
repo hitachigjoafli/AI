@@ -6,4 +6,4 @@ De olika uppgifterna är:
 - [Sökalgoritmer i träd](https://github.com/abbjoafli/AI/blob/master/Sokalgoritmertrad.md)
 - [Sökalgoritmer i labyrint](https://github.com/abbjoafli/AI/blob/master/Sokalgoritmerlabyrint.md)
 
-![AI]https://github.com/abbjoafli/AI/blob/master/img/aibrain.jpg)
+![AI](https://github.com/abbjoafli/AI/blob/master/img/aibrain.jpg)
