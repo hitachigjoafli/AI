@@ -7,15 +7,15 @@ graph = {
     'E' : ['F'],
     'F' : []
 }
+# cities = {
+#     'Stockholm' : ['Strängnäs','Västerås'],
+#     'Västerås' : ['Stockholm', 'Köping', 'Eskilstuna'],
+#     'Eskilstuna' : ['Strängnäs', 'Västerås', 'Kungsör'],
+#     'Kungsör' : ['Köping', 'Eskilstuna'],
+#     'Köping' : ['Kungsör', 'Västerås'],
+#     'Strängnäs' : ['Stockholm', 'Eskilstuna'],
+# }
 cities = {
-    'Stockholm' : ['Strängnäs','Västerås'],
-    'Västerås' : ['Stockholm', 'Köping', 'Eskilstuna'],
-    'Eskilstuna' : ['Strängnäs', 'Västerås', 'Kungsör'],
-    'Kungsör' : ['Köping', 'Eskilstuna'],
-    'Köping' : ['Kungsör', 'Västerås'],
-    'Strängnäs' : ['Stockholm', 'Eskilstuna'],
-}
-cities2 = {
     'Stockholm' : [['Strängnäs',9],['Västerås',10]],
     'Västerås' : [['Stockholm',10],['Köping',4],['Eskilstuna',7]],
     'Strängnäs' :[['Stockholm',9],['Eskilstuna',5]],
@@ -23,6 +23,16 @@ cities2 = {
     'Köping' : [['Kungsör',3],['Västerås',4]],
     'Eskilstuna' : [['Kungsör',5],['Västerås',5],['Strängnäs',5]],
 }
+cities3 = {
+    'Stockholm' : [['Strängnäs',9],['Västerås',10]],
+    'Västerås' : [['Stockholm',10],['Köping',4],['Eskilstuna',7]],
+    'Strängnäs' :[['Stockholm',9],['Eskilstuna',5]],
+    'Kungsör' : [['Köping',3],['Eskilstuna',5],['Katrineholm',5]],
+    'Köping' : [['Kungsör',3],['Västerås',4]],
+    'Katrineholm' : [['Kungsör',5]],
+    'Eskilstuna' : [['Kungsör',5],['Västerås',5],['Strängnäs',5]],
+}
+
 
 import util
 
@@ -285,22 +295,50 @@ def greedyBestFindSearch(node,graph,goal, heuristic=nullHeuristic):
 
 # Driver Code
 
-visited = set() # Skapar och sätter en array som ska ha koll på besökta noder
-print("Breadth first Search")
-bfs(visited, graph, 'A')
-print("Depth first Search")
-visited = set() # Set to keep track of visited nodes.
-dfs(visited, graph, 'A')
+# visited = set() # Skapar och sätter en array som ska ha koll på besökta noder
+# print("Breadth first Search")
+# bfs(visited, graph, 'A')
+# print("Depth first Search")
+# visited = set() # Set to keep track of visited nodes.
+# dfs(visited, graph, 'A')
 
 
-test= depthFirstSearch("Stockholm",cities2,"Kungsör")
+# print("depthFirstSearch")
+# test= depthFirstSearch("Stockholm",cities,"Kungsör")
+# print(test)
+
+# print("breadthFirstSearch")
+# test= breadthFirstSearch("Stockholm",cities,"Kungsör")
+# print(test)
+
+# print("uniformCostSearch")
+# test= uniformCostSearch("Stockholm",cities,"Kungsör")
+# print(test)
+
+# print("aStarSearch")
+# test= aStarSearch("Stockholm",cities,"Kungsör")
+# print(test)
+
+# print("greedyBestFindSearch")
+# test= greedyBestFindSearch("Stockholm",cities,"Kungsör")
+# print(test)
+print("depthFirstSearch")
+test= depthFirstSearch("Stockholm",cities3,"Katrineholm")
 print(test)
 
-test= breadthFirstSearch("Stockholm",cities2,"Kungsör")
+print("breadthFirstSearch")
+test= breadthFirstSearch("Stockholm",cities3,"Katrineholm")
 print(test)
-test= uniformCostSearch("Stockholm",cities2,"Kungsör")
+
+print("uniformCostSearch")
+test= uniformCostSearch("Stockholm",cities3,"Katrineholm")
 print(test)
-test= aStarSearch("Stockholm",cities2,"Kungsör")
+
+print("aStarSearch")
+test= aStarSearch("Stockholm",cities3,"Katrineholm")
 print(test)
-test= greedyBestFindSearch("Stockholm",cities2,"Kungsör")
+
+print("greedyBestFindSearch")
+test= greedyBestFindSearch("Stockholm",cities3,"Katrineholm")
 print(test)
+
