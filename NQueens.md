@@ -1,6 +1,6 @@
 # N-Queens problem
-![Nqueens](https://github.com/abbjoafli/img/blob/master/nQueens.png)
-##Intro
+![Nqueens](https://github.com/abbjoafli/AI/blob/master/img/nQueens.png)
+##Intro 
 I denna uppgift kommer vi titta bitvis på [denna video](https://www.youtube.com/watch?v=JxYhc0QMVVY). Vi kommer varva varje segment med en uppgift så när du tittat på en del, gå då vidare till nästa kapitel.
 De segment du ska kolla är följande:
 1. Teorin 0.0 - 8.13

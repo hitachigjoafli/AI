@@ -16,10 +16,10 @@ De segment du ska kolla är följande:
 ## Teorin (DFS, BFS, Uniform) 
 Videodel: 0.0 - 10.08
 Efter att ha tittat på teorin delen så ska vi räkna ut vilken väg vi tar med de olika sökalgoritmerna vi nu har gått igenom. Desa är depthFirstSearch, breadthFirstSearch och uniformCostSearch. Titta på kartan nedan och försök lista ut vilken väg varje algoritm väljer på **sträckan Stockholm till Katrineholm**. Tänk på att det kan variera beroende på vilken ordning man väljer sina val. Ska man vara ordentlig ska man enlight DFS gå enlight principen LIFO (Last in first out) och BFS enligt FIFO(First in first out) så var konsekvent i vilken ordning du räknar alternativen för rättvisa resultat!
-![Karta](https://github.com/abbjoafli/img/blob/master/Sverigekartan.png)
+![Karta](https://github.com/abbjoafli/AI/blob/master/img/Sverigekartan.PNG
 
 Nu när du har bestämt vägarna för de tre algoritmerna så vill jag att vi leker med den mycket verkliga tanken att en vulkan mellan Eskilstuna och Katrineholm får ett utrbrott och flöder vägen med varm magma. Räka ut vägarna nu med vägen mellan Eskilstuna och Katrineholm bortplockad.
-![Karta](https://github.com/abbjoafli/img/blob/master/Sverigekartan2.png)
+![Karta](https://github.com/abbjoafli/AI/blob/master/img/Sverigekartan2.PNG)
 
 ## Psuedokod och implementering av DFS
 Videodel: 10.09 - 14.33
@@ -37,10 +37,10 @@ Försök själv med att använda depthFirstSearch koden som grund och implemente
 ## Teorin (Greedy, A*)
 Videodel: 17.40 - 24.30
 Nu gör vi samma som i första teoridelen fast för Greedy och A*
-![Karta](https://github.com/abbjoafli/img/blob/master/Sverigekartan.png)
+![Karta](https://github.com/abbjoafli/AI/blob/master/img/Sverigekartan.PNG)
 
 Såklart både med raka vägar och med vulkan scenariona!
-![Karta](https://github.com/abbjoafli/img/blob/master/Sverigekartan2.png)
+![Karta](https://github.com/abbjoafli/AI/blob/master/img/Sverigekartan2.PNG)
 
 ## Kod
 ### Greedy Best Search
