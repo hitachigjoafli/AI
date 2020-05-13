@@ -1,5 +1,5 @@
 #Sökalgoritmer i träd
-![Sökalgoritmer](https://github.com/abbjoafli/AI/blob/master/img/tree.png)
+![Sökalgoritmer](https://github.com/abbjoafli/AI/blob/master/img/tree.PNG?raw=true)
 ##Intro
 I denna uppgift kommer vi titta bitvis på [denna video](https://www.youtube.com/watch?v=1IO_zn6vVms). Vi kommer varva varje segment med en uppgift så när du tittat på en del, gå då vidare till nästa kapitel.
 De segment du ska kolla är följande:
@@ -24,6 +24,8 @@ Nu när du har bestämt vägarna för de tre algoritmerna så vill jag att vi le
 ## Psuedokod och implementering av DFS
 Videodel: 10.09 - 14.33
 Innan du tittar på nästa del så fundera hur du skulle kunna skapa en Depth first search utan att använda rekursion (att den anropar sig själv). Vilka moment måste finnas med för man ska få det att fungera? Klura inte förlänge utan gå vidare till att titta på videon för att se hur jag har gjort och implementera koden i ett python program.
+
+För att kunna göra koddelarna så ladda ner utils.py från example mappen och använd dess Stack, Queue och PriorityQueue funktioner.
 
 ## Kod
 ### Breadth First Search
