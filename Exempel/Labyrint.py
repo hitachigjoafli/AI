@@ -19,6 +19,8 @@ rows = 'ABCDEFGHIJ'
 #     [0,0,0,0,0,0,0,0,0,0],
 #     [0,0,0,0,0,0,0,0,0,0],
 # ]
+
+
 # Labyrint=[
 #     [0,0,0,0,0,0,9,9,0,0],
 #     [0,9,9,9,9,9,0,0,0,0],
@@ -26,11 +28,31 @@ rows = 'ABCDEFGHIJ'
 #     [0,0,0,9,0,0,0,9,0,0],
 # ]
 
+# Labyrint=[
+#     [0,0,0,0,0,8,0,0,0,0],
+#     [0,3,3,4,3,2,0,0,0,0],
+#     [3,0,0,0,0,0,0,1,2,0],
+#     [0,0,0,0,0,0,0,0,0,0],
+# ]
+
+# Labyrint=[
+#     [0,0,0,0,0,8,0,0,0,0],
+#     [0,3,3,4,3,2,0,0,0,0],
+#     [3,2,2,3,0,0,5,1,2,0],
+#     [0,0,3,0,0,0,6,0,0,0],
+#     [0,3,3,4,3,2,0,0,0,0],
+#     [3,2,2,3,0,0,5,1,2,0],
+#     [0,0,3,0,0,0,6,0,0,0],
+# ]
+
 Labyrint=[
     [0,0,0,0,0,8,0,0,0,0],
-    [0,3,3,4,3,2,0,0,0,0],
-    [3,0,0,0,0,0,0,1,2,0],
-    [0,0,0,0,0,0,0,0,0,0],
+    [0,3,3,0,3,8,0,0,0,0],
+    [3,2,2,0,0,8,5,1,2,0],
+    [0,0,3,0,0,8,6,0,0,0],
+    [0,3,3,4,0,9,0,0,0,0],
+    [3,2,2,3,0,9,5,1,2,0],
+    [0,0,3,0,0,9,6,0,0,0],
 ]
 
 # Labyrint=[
@@ -40,7 +62,6 @@ Labyrint=[
 #     [0,0,0,0,0,0,0,0,0,0],
 # ]
 def FindAction(place,Labyrint,rows,maxrow,maxcol):
-    actions=[]
     if place[0]>=0 and place[0]<=maxrow:
         if place[1]>=0 and place[1]<=maxcol:
             value=Labyrint[place[0]][place[1]]
@@ -67,8 +88,8 @@ def PlaceOnBoard(Labyrint):
 
 LabDict=    PlaceOnBoard(Labyrint)
 
-# print(LabDict['B2'])
-# print(LabDict)
+print(LabDict['B2'])
+print(LabDict)
 
 
 
@@ -286,28 +307,30 @@ def greedyBestFindSearch(node,graph,goal, heuristic=nullHeuristic):
 
     return actions  
 
+Start="A1"
+Mål="F7"
 Paths=[]
 print("depthFirstSearch")
-test= depthFirstSearch("A1",LabDict,"D10")
-test.insert(0,"A1")
-Paths.append(["depthFirstSearch",test])
+dfs= depthFirstSearch(Start,LabDict,Mål)
+dfs.insert(0,"A1")
+Paths.append(["depthFirstSearch",dfs])
 print("breadthFirstSearch")
-test= breadthFirstSearch("A1",LabDict,"D10")
+test= breadthFirstSearch(Start,LabDict,Mål)
 test.insert(0,"A1")
 Paths.append(["breadthFirstSearch",test])
 
 print("uniformCostSearch")
-test= uniformCostSearch("A1",LabDict,"D10")
+test= uniformCostSearch(Start,LabDict,Mål)
 test.insert(0,"A1")
 Paths.append(["uniformCostSearch",test])
 
 print("aStarSearch")
-test= aStarSearch("A1",LabDict,"D10")
+test= aStarSearch(Start,LabDict,Mål)
 test.insert(0,"A1")
 Paths.append(["aStarSearch",test])
 
 print("greedyBestFindSearch")
-Path= greedyBestFindSearch("A1",LabDict,"D10")
+Path= greedyBestFindSearch(Start,LabDict,Mål)
 Path.insert(0,"A1")
 Paths.append(["greedyBestFindSearch",Path])
 # print(test)
