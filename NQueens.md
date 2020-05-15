@@ -56,17 +56,17 @@ Videodel: 27.24 - 29.41
 I sista steget ska du lägga ihop alla delar så den kör från början med random damer till att den har nåt scoren 28. Den ska vid jämna mellanrum skriva ut hur många varv den gått samt vilket score den har just då.
 
 
-#Bra länkar
+# Bra länkar
 - [Testa själv bräda](http://www.datagenetics.com/blog/august42012/)
 - [Teorin i pp](https://www.slideshare.net/SKAhsan/modified-genetic-algorithm-for-solving-nqueens-problem-54527086)
 - [Teori i video](https://www.youtube.com/watch?time_continue=1&v=shfJ18BewqM&feature=emb_logo), [del två](https://www.youtube.com/watch?time_continue=66&v=7ZX6Su2Xdi0&feature=emb_logo)
 
 
-#Facit
+# Facit
 
 Lösningsförslag för hela NQueens problemet ligger i Exempel/8Queens.py
 
-##Kod steg 1
+## Kod steg 1
 - "24748552" = 24
 - "82417536" = 28
 - "...3333." = 22
