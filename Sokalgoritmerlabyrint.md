@@ -34,5 +34,12 @@ När du skapat den grafiska världen så är det dags för att skapa musen, Muse
 
 Vill man ha tips så använde jag ** C.move(Mouse, MovementX, MovementY) ** för att flytta musen, då MovementX är nästa positions värde minus denna.
 
+
+## Bygga vidare
+Här är några möjliga sätt att bygga vidare på övningen.
+- Färga vägen musen går med olika färger för att visa de olika algoritmernas färd.
+- Lägg ut fler mål.
+- Ändra målet när det är nått och få musen att gå vidare.
+
 # Facit
 Facit på koden ligger i exempelkod!
