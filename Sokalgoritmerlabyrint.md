@@ -1,6 +1,6 @@
-#Sökalgoritmer i labyrint
+# Sökalgoritmer i labyrint
 ![Sökalgoritmer](https://github.com/abbjoafli/AI/blob/master/img/Labyrint.PNG?raw=true)
-##Intro
+## Intro
 I denna uppgift kommer vi titta bitvis på [denna video](https://www.youtube.com/watch?v=VS7XxEeWahU). Vi kommer varva varje segment med en uppgift så när du tittat på en del, gå då vidare till nästa kapitel.
 De segment du ska kolla är följande:
 1. Teori 0:0 - 4:15
